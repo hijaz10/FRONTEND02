@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    background: #123;
+    height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
