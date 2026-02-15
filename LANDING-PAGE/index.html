@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Website Design</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="main">
-        <h1>MY WEBSITE</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EXPENSE TRACKER</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
         <div class="container">
-                <div class="box1"  id="images">
-                <img src="img/desktop-image.jpg" alt="">
-                <p>BOX 1</p>
+            <h1>EXPENSE TRACKER</h1>
+
+            <div class="balance-container">
+                <h2>YOUR BALANCE</h2>
+                <h1 id="balance">0.00</h1>
+                
+                <div class="summary">
+                    <div class="income-container">
+                        <h3>Income</h3>
+                        <p id="income-amount">0.000</p>
+                    </div>
+
+                    <div class="expense-container">
+                        <h3>Expenses</h3>
+                        <p id="expense-amount">0.000</p>
+                    </div>
+                </div>
             </div>
-            <div class="box2" id="images">
-                <img src="img/neck-tie-image.jpg" alt="">
-                <p>BOX 2</p>
+
+            <div class="main-content">
+                <div class="transction-container">
+                    <h2>Transactions</h2>
+                    <ul id="transaction-list">
+                        <!--TRANSACTIONS WILL BE INSERTED HERE-->
+                        <li>Hijaz</li>
+                        <li>Hijaz</li>
+                        <li>Hijaz</li>
+                        <li>Hijaz</li>
+                        <li>Hijaz</li>
+                        <li>Hijaz</li>
+                        <li>Hijaz</li>
+                        <li>Hijaz</li>
+                        <li>Hijaz</li>
+                        <li>Hijaz</li>
+                        <li>Hijaz</li>
+                        <li>Hijaz</li>
+                        <li>Hijaz</li>
+                        <li>Hijaz</li>
+                        <li>Hijaz</li>
+                    </ul>
+                </div>
+                <div class="form-container">
+                    <h2>Add Transaction</h2>
+
+                    <form action="" id="transaction-form">
+                        <div class="form-group">
+                            <label for="description">Descriptio</label>
+                            <input type="text" id="description"
+                            placeholder="Enter description..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">Amount</label>
+                            <input type="number" id="amount"
+                            placeholder="Enter Amount..." required>
+                            <small>Use (-) for expenses and (+) for Income</small>
+                        </div>
+
+                        <button type="submit">Add Transaction</button>
+                    </form>
+                </div>
             </div>
-            <div class="box3" id="images">
-                <img src="img/Hacker-Wallpaper-4K-HD-Free-download.jpg" alt="">
-                <p>BOX 3</p>
-            </div>
-            <div class="box4" id="images">
-                <img src="img/sunflower-image.jpeg" alt="">
-                <p>BOX 4</p>
-            </div>
-            <div class="box5" id="images">
-                <img src="img/hwallpaper.jpg" alt="">
-                <p>BOX 5</p>
-            </div>
-            <div class="box6" id="images">
-                <img src="img/masked-guy.jpg" alt="">
-                <p>BOX 6</p>
-            </div>
-            <div class="box7" id="images">
-                <img src="img/Mr-Beast-Logo.jpg" alt="">
-                <p>BOX 7</p>
-            </div>
-            <div class="box8" id="images">
-                <img src="img/running-cats.jpg" alt="">
-                <p>BOX 8</p>
-            </div>
-            <div class="box9" id="images">
-                <img src="img/skull-creativity.png" alt="">
-                <p>BOX 9</p>
-            </div>
+
         </div>
-    </div>
-</body>
+
+        <script src="script.js"></script>
+    </body>
 </html>
