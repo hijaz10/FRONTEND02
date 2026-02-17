@@ -44,3 +44,7 @@ function createTransactionEl(transaction){
     li.classList.add("transaction")
     li.classList.add(transaction.amount > 0? "income": "expense")
 } 
+
+function updateSummary(){
+    
+}
