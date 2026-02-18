@@ -46,5 +46,5 @@ function createTransactionEl(transaction){
 } 
 
 function updateSummary(){
-    
+    transactionListEl.innerHTML = ""
 }
