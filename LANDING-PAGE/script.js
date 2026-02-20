@@ -9,20 +9,7 @@ const amountEl = document.getElementById("amount");
 let transactions = JSON.parse(localStorage.getItem("transactions")) || []
 
 function addTransaction(e){
-    e.preventDefault()
-
-    //get form data
-    const description = descriptionEl.value.trim();
-    const amount = parseFloat(amountEl.value);
-
-    transactions.push({
-        id:Date.now(),
-        description,
-        amount
-    })
-
-    localStorage.setItem("transactions", JSON.stringify(transactions))
-
+    
     updateTransactionList()
     updateSummary()
 
