@@ -9,6 +9,7 @@ function App() {
     <Routes>
       <Route path='/' element={<HomePage/>}></Route>
       <Route path='/checkout' element={KK}></Route>
+      <Route path='/Logout' element={ <h1>LOGOUT PAGE</h1>}></Route>
     </Routes>
     
     </>
